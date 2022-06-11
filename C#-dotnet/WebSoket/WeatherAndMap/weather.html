@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .text {
+            text-align: center;
+        }
+
+        .center {
+            margin: auto;
+            border: 3px solid #48BAE4;
+            height: 400px;
+            width: 800px;
+        }
+
+
+        table {
+            border: 0px;
+            align-self: center;
+        }
+
+        tr,
+        td {
+            text-align: center;
+            width: 300px;
+        }
+
+        image {
+            height: 300px;
+            width: 500px;
+        }
+
+        iframe {
+            border: 0px;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text">날씨와 지도</h1>
+
+    <br><br>
+    <h2 class="text">IP 기반으로 위치를 찾아 해당 지역의 지도와 날씨를 보여줍니다.</h2>
+
+    <br><br>
+    <table class="center">
+        <tr>
+            <td style="width: 500px;">
+                <h2>접속 위치</h2>
+            </td>
+            <td>
+                <h2>날씨</h2>
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 300px; width: 500px;"><img id="map" src="http://132.226.234.94:8888/mapimg"></td>
+            <td style="height: 300px; width: 300px;"><iframe id="weather" src="http://132.226.234.94:8888/weatherinfo"></iframe></td>
+        </tr>
+    </table>
+    <br>
+
+
+</body>
+
+</html>
